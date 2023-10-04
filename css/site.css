@@ -21,7 +21,7 @@ h1 {
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 10px;
+  margin: 15px;
   padding: 10px;
   border: solid 1px #888;
   background-color: #84B59F;
