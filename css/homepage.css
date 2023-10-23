@@ -4,3 +4,10 @@
   margin: 15px;
   max-width: 500px;
 }
+/* 
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */

@@ -1,21 +1,15 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/**
+ * Rock-paper-scissors
+ * Implementation of the game
+ * Peter Ampudia <pampudia@ucsc.edu>
+ * October 2023
+ */
 
-// Constants
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Rock-paper-scissors:
+// 1. Accept user input
+//    1.1 Validate user input
+// 2. Choose computer move
+// 3. Evaluate matchup between user and computer choices
+// 4. Display user and computer inputs
+// 5. Display winner and loser
