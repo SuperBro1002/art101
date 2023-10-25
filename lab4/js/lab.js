@@ -5,6 +5,13 @@
  * October 2023
  */
 
+// Coding a program:
+// 1. Think of something you want to program
+// 2. Write out the basic structure in pseudocode
+// 3. Write code
+// 4. Try running it
+// 5. Bugfix until satisfied
+// 6. Deploy it somewhere
 
 // Rock-paper-scissors:
 // 1. Accept user input
