@@ -1,21 +1,25 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/**
+ * lab.js - Arrays and Objects
+ * Author: Peter Ampudia
+ * Date: 10/26/2023
+ **/
 
-// Constants
+// Define variables
+myTransport = ["Honda CR-V", "bus"];
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// Create object for my main ride
+var myMainRide = {
+  make: "Honda",
+  model: "CR-V",
+  color: "Grey",
+  year: 2010,
+  age: function () {
+    return 2023 - this.year;
+  }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Output
+document.writeln("I get around with my " + myTransport[0] + " and the " + myTransport[1] + ".<br>");
 
-// let's get this party started
-main();
+document.writeln("My Main Ride: <pre>", 
+    JSON.stringify(myMainRide, null, '\t'), "</pre>");
