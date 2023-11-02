@@ -4,12 +4,14 @@
  */
 
 
+var userName = prompt("Input name:");
+
 // Takes an input from the user and sorts each letter alphabetically
-function sortInput() {
-    var userName = prompt("Input name:");
-    var sortedArray = userName.split('').sort();
+function sortInput(input) {
+
+    var sortedArray = input.split('').sort();
 
     return sortedArray.join('');
 }
 
-document.writeln("Here's your sorted name: ", sortInput(), "</br>");
+document.writeln("Here's your sorted name: ", sortInput(userName), "</br>");
