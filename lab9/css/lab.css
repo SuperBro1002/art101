@@ -1,0 +1,17 @@
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+.selected {
+  background: red ;
+}
+
+.special {
+  background-color: lightskyblue;
+  border: dotted 70px green;
+  color: darkblue;
+  font-weight: bold;
+}
