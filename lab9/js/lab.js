@@ -5,6 +5,7 @@
 
 // Adds a button to each section of index.html
 $(".minor-section").append("<button class='pageButton'>CLICK");
+//$(".minor-section").append("<button class='secretButto'>Secret");
 
 //Adds eventlisteners to all buttons
 $(".pageButton").click(
@@ -12,3 +13,9 @@ $(".pageButton").click(
         $(this).parent().toggleClass("special");
     }
 );
+
+// $(".secretButto").click(
+//     function () {
+//         $(".minor-section").toggleClass("hidden");
+//     }
+// );
