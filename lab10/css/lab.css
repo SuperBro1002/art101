@@ -5,22 +5,24 @@
     background-color: #DDD8C4;
   }
 
-.selected {
-  background: red ;
-}
-
-.text {
+.text p{
+  display: inline-block;
   background-color: lightskyblue;
   border: solid 1px black;
+  padding: 5px 10px;
   border-radius: 20px;
   font-family: sans-serif;
   font-weight: bold;
-  /* text-indent: 10px; */
-  /* text-align: center; */
+  text-align: left;
   margin-bottom: 10px;
   max-width: 600px;
 }
 
-.hidden {
-  display: none;
+.text:nth-child(even){
+  text-align: right;
+}
+
+.text:nth-child(even) p {
+  background-color: lightgreen;
+
 }
