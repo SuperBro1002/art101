@@ -20,4 +20,5 @@ $("#make-convo").click(function () {
     const newText = makeRandomText();
     // Append a new div to the output div
     $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+    $("#output").toggleClass("minor-section");
 });

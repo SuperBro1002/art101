@@ -1,0 +1,14 @@
+.minor-section {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #DDD8C4;
+}
+
+#output {
+  width: 700px;
+}
+
+#debugText {
+  width: 700px;
+}
