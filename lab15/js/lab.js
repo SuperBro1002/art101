@@ -8,7 +8,7 @@
 $("#activate").click(function () {
     $.ajax({
         // URL for endpoint
-        url: "http://www.yerkee.com/api/fortune/wisdom",
+        url: "https://www.yerkee.com/api/fortune/wisdom",
 
         type: "GET",
 
