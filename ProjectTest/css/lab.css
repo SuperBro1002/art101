@@ -1,12 +1,19 @@
 /*CSS styling sheet*/
 
-.overlay {
-  background-color: rgb(208,208,208);
+#overlay {
+  background-color: white;
+  color: black;
   width: 100%;
   position: absolute;
   z-index: 9;
+  top: 0;
+  left: 0;
   height: 100%;
-  
+  display: show;
+}
+
+#overlay p {
+  font-size: 15px;
 }
 
 @keyframes fade {
@@ -60,15 +67,30 @@ body {
     color: #f1f1f1;
   }
 
+  #infoContainer {
+    height: 100%;
+    opacity: 100%;
+    position:fixed;
+    width: 450px;
+    top: 0;
+    float: right;
+    right: 0;
+    background-color: rgb(208, 208, 208);
+    overflow: hidden;
+    z-index: 1;
+  }
 
   #infoText {
+    opacity: 100%;
     float: right;
     height: 100%; /* 100% Full-height */
     width: 450px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
+    overflow: hidden;
+    
     background-color: rgb(208, 208, 208);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 0px; /* Place content 60px from the top */
@@ -95,16 +117,17 @@ body {
 
   /* US map */
   .us-map {
-    max-width: 500px;
+    max-width: 650px;
   }
 
   /* highlight for US map */
   .highlight {
+    position: absolute;
     border: 5px solid cyan;
     background-color: rgba(0, 255, 255, 0.3);
   }
 
-.animal-image {
-  margin: 0px;
-  max-width: 250px;
-}
+  .animal-image {
+    margin: 0px;
+    max-width: 250px;
+  }

@@ -15,6 +15,9 @@
 
     <!-- load jQuery library to make javascript easier (must be above our lab js)-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
     <!-- Link to javascript file - DEFER waits until all elements are rendered -->
     <script type="text/javascript" src="./js/lab.js" DEFER></script>
 </head>
@@ -23,9 +26,11 @@
     <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
     <main id="content">
         <section>
-            <div class="overlay">
-                <h1 id="heading">Extinction Timeline</h1>
-                <button id="start">Begin</button>
+            <div id="overlay">
+                <h1 id="heading">Extinction Map Timeline</h1>
+                <p> Map of extinct and invasive species' distribution in the U.S. over time. <br><br> Select a species
+                    to view from the list on the left.<br><br> Adjust the year displayed with the slider below.</p>
+                <button class="start">Begin</button>
             </div>
         </section>
 
@@ -34,22 +39,40 @@
             <img class="us-map" src="./img/usmap.jpg">
         </div>
 
-        <!--highlight overlay for US map-->
-        <div class="highlight" style="top:100px; left:100px; width: 200px; height: 100px;"></div>
+        <!--highlight overlay for US map- point 1-->
+        <div class="highlight" id="anm1Y1" style="top:200px; left:500px; width:200px; height:80px; opacity:0%"></div>
+
+        <!--highlight overlay for US map- point 2-->
+        <div class="highlight" id="anm1Y2" style="top:100px; left:500px; width:150px; height:70px; opacity:0%"></div>
+
+        <!--highlight overlay for US map- point 3-->
+        <div class="highlight" id="anm1Y3" style="top:100px; left:550px; width:100px; height:70px; opacity:0%"></div>
+
+        <!--highlight overlay for US map- point 4-->
+        <div class="highlight" id="anm1Y4" style="top:70px; left:550px; width:100px; height:60px; opacity:0%"></div>
+
+        <!--highlight overlay for US map- point 5-->
+        <div class="highlight" id="anm1Y5" style="top:60px; left:530px; width:90px; height:50px; opacity:0%"></div>
+
+
 
         <div id="mySidenav" class="sidenav">
             <a href="#" id="anm1">California Condor</a>
             <a href="#" id="anm2">Gray Wolf</a>
             <a href="#" id="anm3">San Joaquin Kit Fox</a>
             <a href="#" id="anm4">Franklin's Bumblebee</a>
+            <a href="#" id="anm5">Lionfish</a>
+            <a href="#" id="anm6">Zebra Mussel</a>
         </div>
 
-        <div id="infoText">
-            <p id="anmDesc">Test</p>
+        <div id="infoContainer">
+            <p id="anmDesc"></p>
+            <div id="infoText">
+            </div>
         </div>
 
         <div class="navSlider">
-            <input id="slider" type="range" min="1" max="5" value="50">
+            <input id="slider" type="range" min="0" max="4" value="0">
         </div>
     </main>
 </body>
